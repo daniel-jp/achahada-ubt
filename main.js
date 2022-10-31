@@ -41,7 +41,7 @@ var flyerPreviewContainer = document.querySelector('.flyer-preview-container')
 var PreviewBox = flyerPreviewContainer.querySelector('.flyer-preview')
 
 document.querySelectorAll('.food .slide').forEach((food) => {
-    flyerPreviewContainer.style.display = 'active'
+    flyerPreviewContainer.style.display = 'flex'
 
     food.onclick = () => {
         var name = food.getAttribute('data-name')
