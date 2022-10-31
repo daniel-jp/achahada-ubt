@@ -2,26 +2,26 @@ const navBar = document.querySelector('.menu .navbar')
 const menuBtn = document.querySelector('#menu-btn')
 
 menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('fa-times');
-    navBar.classList.toggle('active');
-});
+    menuBtn.classList.toggle('fa-times')
+    navBar.classList.toggle('active')
+})
 
-const swiper = new Swiper(".produit-slide", {
+const swiper = new Swiper('.produit-slide', {
     grabCursor: true,
     loop: true,
     centeredSlides: true,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-});
+})
 
-const swiper2 = new Swiper(".flyer-slide", {
+const swiper2 = new Swiper('.flyer-slide', {
     grabCursor: true,
     loop: true,
     centeredSlides: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true,
     },
     breakpoints: {
@@ -35,31 +35,31 @@ const swiper2 = new Swiper(".flyer-slide", {
             slidesPerView: 3,
         },
     },
-});
+})
 
-let flyerPreviewContainer = document.querySelector('.flyer-preview-container');
-let PreviewBox = flyerPreviewContainer.querySelector('.flyer-preview')
+var flyerPreviewContainer = document.querySelector('.flyer-preview-container')
+var PreviewBox = flyerPreviewContainer.querySelector('.flyer-preview')
 
-document.querySelectorAll('.food .slide').forEach(food => {
-    flyerPreviewContainer.style.display = 'flex';
+document.querySelectorAll('.food .slide').forEach((food) => {
+    flyerPreviewContainer.style.display = 'active'
 
     food.onclick = () => {
-        let name = food.getAttribute('data-name');
+        var name = food.getAttribute('data-name')
 
-        PreviewBox.forEach(preview => {
-            let target = preview.getAttribute('data-target');
+        PreviewBox.forEach((preview) => {
+            var target = preview.getAttribute('data-target')
             if (name == target) {
-                preview.classList.add('active');
+                preview.classList.add('active')
             }
+        })
+    }
+})
 
-        });
-
-    };
-});
-
-flyerPreviewContainer.querySelector('#close-preview').onclick = () => {
-    flyerPreviewContainer.style.display = 'none';
-    PreviewBox.forEach(close => {
-        close.classList.remove('active');
-    });
-}
+flyerPreviewContainer
+    .querySelector('#close-preview')
+    .addEventListener('click', () => {
+        flyerPreviewContainer.style.display = 'none'
+        PreviewBox.forEach((close) => {
+            close.classList.remove('active')
+        })
+    })

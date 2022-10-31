@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@1,400;1,700&family=Dosis:wght@200;300;400&family=Lateef&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Stick+No+Bills:wght@200;400;500;600&display=swap');
  :root {
     --peru: #cd9452;
     --black: #222;
@@ -13,7 +13,7 @@
 }
 
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Stick', sans-serif;
     padding: 0;
     margin: 0;
     outline: none;
@@ -189,7 +189,7 @@ section {
     background-position: center !important;
     position: relative;
     z-index: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -309,11 +309,26 @@ section {
     height: 34rem;
 }
 
+.about .beuf2 a {
+    margin: 2rem;
+}
+
+.about .beuf1 a {
+    margin: 2rem;
+}
+
 .about .text1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     align-items: center;
     color: white;
+}
+
+.about .text1,
+h2,
+p,
+h3 {
+    padding: .4rem;
 }
 
 .about .beuf1 .imag1:hover {
@@ -336,13 +351,15 @@ section {
 }
 
 .poulet-frais .head-poule {
-    font-family: 'Fasthand', sans-serif;
     text-align: center;
     font-size: 5rem;
     padding: 2rem;
-    color: hsl(286, 91%, 37%);
-    font-weight: 700;
+    color: white;
     margin-bottom: 1rem;
+}
+
+.poulet-frais .head-poule h3 {
+    font-family: 'Satisfy', sans-serif;
 }
 
 .poulet-frais .poulet {
@@ -354,9 +371,10 @@ section {
 }
 
 .poulet .card {
-    box-shadow: 0px 0px 4px 4px rgb(149, 138, 156);
     margin: 1rem;
     background: #f0f0f5;
+    border-radius: 6px;
+    padding: 4px;
 }
 
 .poulet .card-title {
@@ -371,10 +389,62 @@ section {
     font-weight: bold;
 }
 
+.poulet-frais .head-charcuterie {
+    text-align: center;
+    font-size: 5rem;
+    padding: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.poulet-frais .head-charcuterie h3 {
+    font-family: 'Satisfy', sans-serif;
+}
+
+.poulet-frais .charcuterie {
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.poulet-frais .charcuterie .card {
+    box-shadow: 0px 0px 2px 2px rgb(149, 138, 156);
+    background: #f0f0f5;
+    margin: 1rem;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.charcuterie .card img {
+    width: 26rem;
+    border-radius: 6px;
+}
+
+.charcuterie .card #img1 {
+    height: 170px;
+    width: 26rem;
+    margin-left: -44px;
+    padding: 2px;
+}
+
+.charcuterie .card-title {
+    font-size: 1.3rem;
+    color: var(--peru);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.charcuterie .card-body p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 .heading span {
     font-size: 2.6rem;
     font-weight: 700;
-    color: hsl(286, 91%, 37%);
+    color: white;
 }
 
 .heading h3 {
@@ -502,7 +572,7 @@ div .phon {
 
 #close-preview {
     position: absolute;
-    top: 2.5rem;
+    top: 1.5rem;
     right: 2.5rem;
     cursor: pointer;
     font-size: 3rem;
@@ -608,6 +678,12 @@ div .phon {
     .poulet .card img {
         width: 100%;
         height: auto;
+    }
+    .poulet-frais .charcuterie {
+        display: block;
+    }
+    .charcuterie .card img {
+        width: 100%;
     }
     .header .command {
         margin: 2rem;
