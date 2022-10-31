@@ -25,11 +25,10 @@
 }
 
 body {
-    background-image: url(./assets/bg4.jpg);
+    background: #121214;
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: #121214;
 }
 
 *>img {
@@ -131,6 +130,7 @@ section {
 }
 
 .menu .navbar a {
+    text-transform: uppercase;
     font-size: 2rem;
     margin-left: 2rem;
     color: white;
@@ -259,12 +259,14 @@ section {
 
 .head-viandre {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .head-viandre h3 {
-    font-size: 2.5rem;
+    font-size: 5rem;
     padding: 2rem;
+    color: hsl(286, 91%, 37%);
+    font-weight: 700;
 }
 
 .head-viandre p {
@@ -278,40 +280,43 @@ section {
     color: #C91;
 }
 
-.about .text1 {
-    font-size: 1.3rem;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 5rem;
-}
-
 .about {
+    color: white;
     margin-bottom: 10rem;
-    background: #e8e8ee;
+    background: #282a2b;
 }
 
-.beuf {
+.about .beuf1 {
     display: flex;
-    gap: .1rem;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-.beuf2 {
+.about .beuf2 {
     display: flex;
-    gap: .1rem;
+    justify-content: center;
+    gap: 1.2rem;
 }
 
-.about .beuf .imag1 {
-    height: 34rem;
+.about .beuf1 .imag1 {
     width: 34rem;
+    height: 34rem;
 }
 
 .about .beuf2 .imag2 {
-    height: 34rem;
     width: 34rem;
-    margin-top: 20px;
+    height: 34rem;
 }
 
-.beuf .imag1:hover {
+.about .text1 {
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.about .beuf1 .imag1:hover {
     transform: scale(1.2)
 }
 
@@ -321,31 +326,37 @@ section {
 
 .heading {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .poulet-frais {
     margin-bottom: 10rem;
-    background: #e8e8ee;
+    background: #282a2b;
     justify-items: center;
 }
 
 .poulet-frais .head-poule {
     font-family: 'Fasthand', sans-serif;
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--peru);
-    margin-bottom: 3rem;
+    font-size: 5rem;
+    padding: 2rem;
+    color: hsl(286, 91%, 37%);
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .poulet-frais .poulet {
-    display: flex;
-    gap: 3rem;
+    gap: 3px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: auto;
+    display: flex;
+}
+
+.poulet .card {
+    box-shadow: 0px 0px 4px 4px rgb(149, 138, 156);
+    margin: 1rem;
+    background: #f0f0f5;
 }
 
 .poulet .card-title {
@@ -361,17 +372,23 @@ section {
 }
 
 .heading span {
-    font-size: 2.5rem;
-    color: var(--peru);
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: hsl(286, 91%, 37%);
 }
 
 .heading h3 {
     font-size: 4.5rem;
-    color: var(--black);
+    color: hsla(149, 91%, 37%, 0.802);
+    font-weight: 700;
+}
+
+.heading h3:hover {
+    transform: scale(1.1);
 }
 
 .food {
-    background: #e8e8ee;
+    background: #282a2b;
 }
 
 .food .slide {
@@ -386,7 +403,6 @@ section {
 .food .swiper-slide-active {
     transform: scale(1);
     opacity: 1;
-    background: #2b2b35;
     box-shadow: var(--box-shadow);
     border: var(--border);
     margin-bottom: 5rem;
@@ -409,8 +425,8 @@ section {
 
 .food .slide p {
     font-size: 2rem;
-    color: white;
-    margin-top: 1rem;
+    color: black;
+    margin-bottom: 1rem;
 }
 
 .flyer-preview-container {
@@ -537,6 +553,9 @@ div .phon {
         display: grid;
         gap: 2rem;
     }
+    .header a {
+        display: block;
+    }
     #menu-btn {
         display: inline-block;
         margin-right: 2rem;
@@ -552,6 +571,9 @@ div .phon {
         border-top: var(--border);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         background-color: white;
+        margin: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
     }
     .menu .active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -566,8 +588,33 @@ div .phon {
         top: initial;
         bottom: 1rem;
     }
+    .about .beuf1 {
+        justify-content: center;
+        display: block;
+    }
+    .about .beuf2 {
+        justify-content: center;
+        display: block;
+    }
+    .about .beuf1 .imag1 {
+        width: 100%;
+    }
+    .about .beuf2 .imag2 {
+        width: 100%;
+    }
     .poulet-frais .poulet {
         display: block;
+    }
+    .poulet .card img {
+        width: 100%;
+        height: auto;
+    }
+    .header .command {
+        margin: 2rem;
+        text-align: center;
+    }
+    .produit .slide .content a {
+        margin: 3rem auto;
     }
 }
 
@@ -576,13 +623,22 @@ div .phon {
         font-size: 50%;
     }
     .produit .slide .content h3 {
-        font-size: 7rem;
+        font-size: 2rem;
+    }
+    .produit .slide .content span {
+        font-size: 2rem;
+    }
+    .produit .slide .content a {
+        font-size: auto;
     }
     .header .command {
-        font-size: 2rem;
+        font-size: auto;
     }
     .about .text1 {
-        font-size: 2rem;
+        font-size: auto;
+    }
+    .head-viandre h3 {
+        font-size: 3rem;
     }
 }
 
