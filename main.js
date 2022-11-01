@@ -76,21 +76,20 @@ const swiper3 = new Swiper(".surgel-slide", {
 let flyerPreviewContainer = document.querySelector('.flyer-preview-container')
 let PreviewBox = flyerPreviewContainer.querySelector('.flyer-preview')
 
-// document.querySelectorAll('.food .slide').forEach((food) => {
-//     flyerPreviewContainer.style.display = 'flex';
+document.querySelectorAll('.food .slide').forEach((food) => {
+    flyerPreviewContainer.style.display = 'flex';
 
-//     food.onclick = () => {
-//         let name = food.getAttribute('data-name');
+    food.onclick = () => {
+        let name = food.getAttribute('data-name');
 
-//         PreviewBox.forEach(preview => {
-//             let target = preview.getAttribute('data-target');
-//             if (name == target) {
-//                 preview.classList.add('active');
-//             }
-//         });
-//     }
-
-// });
+        PreviewBox.forEach(preview => {
+            let target = preview.getAttribute('data-target');
+            if (name == target) {
+                preview.classList.add('active');
+            }
+        });
+    }
+});
 
 flyerPreviewContainer
     .querySelector('#close-preview')
