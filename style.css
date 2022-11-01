@@ -25,10 +25,12 @@
 }
 
 body {
-    background: #121214;
+    /* background: #121214;
+     */
+    background-image: url(./assets/bg4.jpg);
     background-position: top center;
-    background-size: 100% auto;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 *>img {
@@ -164,7 +166,7 @@ section {
 }
 
 .produit {
-    padding: 0;
+    padding: 0%;
     background: var(--black);
 }
 
@@ -183,7 +185,7 @@ section {
     letter-spacing: .2rem;
 }
 
-.produit .slide {
+.produit .swiper-wrapper .slide {
     min-height: 100vh;
     background-size: cover !important;
     background-position: center !important;
@@ -194,9 +196,9 @@ section {
     justify-content: center;
 }
 
-.produit .slide::before {
+.produit #slide::before {
     content: '';
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     height: 100%;
@@ -205,13 +207,13 @@ section {
     z-index: -1;
 }
 
-.produit .slide .content {
+.produit #slide .content {
     text-align: center;
     width: 70rem;
     display: none;
 }
 
-.produit .slide .content span {
+.produit #slide .content span {
     font-size: 3rem;
     display: block;
     padding-bottom: .5rem;
@@ -219,7 +221,7 @@ section {
     animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34).2s backwards;
 }
 
-.produit .slide .content h3 {
+.produit #slide .content h3 {
     font-size: 8vw;
     text-transform: uppercase;
     color: var(--white);
@@ -229,7 +231,7 @@ section {
     animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34).4s backwards;
 }
 
-.produit .slide .content .btn {
+.produit #slide .content .btn {
     animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34).6s backwards;
 }
 
@@ -265,7 +267,7 @@ section {
 .head-viandre h3 {
     font-size: 5rem;
     padding: 2rem;
-    color: hsl(286, 91%, 37%);
+    color: hsla(149, 91%, 37%, 0.802);
     font-weight: 700;
 }
 
@@ -282,7 +284,7 @@ section {
 
 .about {
     color: white;
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
     background: #282a2b;
 }
 
@@ -302,11 +304,13 @@ section {
 .about .beuf1 .imag1 {
     width: 34rem;
     height: 34rem;
+    border-radius: 100%;
 }
 
 .about .beuf2 .imag2 {
     width: 34rem;
     height: 34rem;
+    border-radius: 100%;
 }
 
 .about .beuf2 a {
@@ -345,9 +349,10 @@ h3 {
 }
 
 .poulet-frais {
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
     background: #282a2b;
     justify-items: center;
+    align-items: center;
 }
 
 .poulet-frais .head-poule {
@@ -360,6 +365,9 @@ h3 {
 
 .poulet-frais .head-poule h3 {
     font-family: 'Satisfy', sans-serif;
+    margin-top: -4rem;
+    box-shadow: 0px 0px 40px 4px rgb(17, 16, 14);
+    border-radius: 30px;
 }
 
 .poulet-frais .poulet {
@@ -372,9 +380,20 @@ h3 {
 
 .poulet .card {
     margin: 1rem;
-    background: #f0f0f5;
     border-radius: 6px;
-    padding: 4px;
+    padding: 2px;
+}
+
+.poulet .card img {
+    border-radius: 1rem;
+    font-weight: bold;
+    margin-bottom: 1.4rem;
+}
+
+.poulet .card:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: var(--box-shadow);
 }
 
 .poulet .card-title {
@@ -387,13 +406,15 @@ h3 {
 .poulet .card-body p {
     font-size: 1.4rem;
     font-weight: bold;
+    color: white
 }
 
 .poulet-frais .head-charcuterie {
     text-align: center;
     font-size: 5rem;
-    padding: 2rem;
     color: white;
+    box-shadow: 0px 0px 40px 4px rgb(17, 16, 14);
+    border-radius: 30px;
     margin-bottom: 1rem;
 }
 
@@ -402,35 +423,28 @@ h3 {
 }
 
 .poulet-frais .charcuterie {
-    gap: 3px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     display: flex;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
 }
 
 .poulet-frais .charcuterie .card {
-    box-shadow: 0px 0px 2px 2px rgb(149, 138, 156);
-    background: #f0f0f5;
-    margin: 1rem;
     border-radius: 6px;
-    padding: 4px;
+}
+
+.poulet-frais .charcuterie .card:hover {
+    transform: scale(1.2);
+    box-shadow: var(--box-shadow);
 }
 
 .charcuterie .card img {
-    width: 26rem;
-    border-radius: 6px;
+    border-radius: 1rem;
+    margin-bottom: 1.3rem;
 }
 
-.charcuterie .card #img1 {
-    height: 170px;
-    width: 26rem;
-    margin-left: -44px;
-    padding: 2px;
-}
-
-.charcuterie .card-title {
-    font-size: 1.3rem;
+.charcuterie .card h3 {
+    font-size: 2rem;
     color: var(--peru);
     font-weight: bold;
     margin-bottom: 1rem;
@@ -439,6 +453,54 @@ h3 {
 .charcuterie .card-body p {
     font-size: 1.4rem;
     font-weight: bold;
+    color: white;
+}
+
+.PSurgel {
+    text-align: center;
+    background: #282a2b;
+    margin-bottom: 20rem;
+}
+
+.head-surgel h3 {
+    font-family: 'Satisfy', sans-serif;
+    font-size: 4.5rem;
+    color: white;
+    margin-top: -22px;
+    margin-bottom: 2.2rem;
+}
+
+.PSurgel .slide {
+    text-align: center;
+    cursor: pointer;
+    height: 500px;
+}
+
+.PSurgel .swiper-slide-active {
+    box-shadow: var(--box-shadow);
+}
+
+.PSurgel .slide .card-body {
+    color: white;
+    text-align: center;
+}
+
+.PSurgel .slide img {
+    width: 85%;
+    height: 280px;
+    border-radius: 100%;
+    margin-bottom: 1.2rem;
+}
+
+.PSurgel .slide .card-body h3 {
+    font-size: 1.5rem;
+    color: var(--peru);
+}
+
+.PSurgel .slide .card-body p {
+    font-size: 1rem;
+    color: hsla(149, 91%, 37%, 0.802);
+    margin-bottom: 1rem;
 }
 
 .heading span {
@@ -459,15 +521,19 @@ h3 {
 
 .food {
     background: #282a2b;
+    margin-bottom: 10rem;
 }
 
 .food .slide {
+    height: 484px;
+    align-items: center;
     text-align: center;
-    transform: scale(.9);
-    opacity: .5;
+    transform: scale(.7);
+    opacity: .3;
     z-index: 0;
     background: #e8e8ee;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 .food .swiper-slide-active {
@@ -475,28 +541,41 @@ h3 {
     opacity: 1;
     box-shadow: var(--box-shadow);
     border: var(--border);
-    margin-bottom: 5rem;
 }
 
 .food .slide img {
-    height: 42rem;
-    width: 28rem;
-    padding-top: 2rem;
+    width: 100%;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+.food .slide .card {
+    text-align: center;
 }
 
 .food .slide h3 {
     font-family: 'Fasthand', sans-serif;
-    font-size: 3rem;
-    padding: 1rem 0;
+    font-size: 5rem;
     color: black;
-    margin-top: -6rem;
+    margin-top: -12rem;
+    display: block;
     text-transform: uppercase;
 }
 
-.food .slide p {
+.food .slide .card .card-text {
     font-size: 2rem;
-    color: black;
-    margin-bottom: 1rem;
+    color: rgb(11, 10, 10);
+    padding: 2rem;
+}
+
+.food .slide span {
+    font-size: 1.5rem;
+    color: hsla(149, 91%, 37%, 0.802);
+    background-color: #666;
+    padding: 1rem;
+    border-radius: 30px;
+    font-weight: bold;
 }
 
 .flyer-preview-container {
@@ -606,7 +685,7 @@ div .phon {
     html {
         font-size: 55%;
     }
-    .produit .slide h3 {
+    .produit #slide h3 {
         font-size: 15vw;
     }
     .header .command {
@@ -675,6 +754,10 @@ div .phon {
     .poulet-frais .poulet {
         display: block;
     }
+    .poulet-frais .poulet h3 {
+        display: block;
+        text-align: center;
+    }
     .poulet .card img {
         width: 100%;
         height: auto;
@@ -683,14 +766,18 @@ div .phon {
         display: block;
     }
     .charcuterie .card img {
-        width: 100%;
+        /* width: 100%; */
+        border-radius: 6px;
     }
     .header .command {
         margin: 2rem;
         text-align: center;
     }
-    .produit .slide .content a {
+    .produit #slide .content a {
         margin: 3rem auto;
+    }
+    .poulet-frais .head-charcuterie h3 {
+        text-align: center;
     }
 }
 
@@ -698,13 +785,13 @@ div .phon {
     html {
         font-size: 50%;
     }
-    .produit .slide .content h3 {
+    .produit #slide .content h3 {
         font-size: 2rem;
     }
-    .produit .slide .content span {
+    .produit #slide .content span {
         font-size: 2rem;
     }
-    .produit .slide .content a {
+    .produit #slide .content a {
         font-size: auto;
     }
     .header .command {
@@ -713,8 +800,15 @@ div .phon {
     .about .text1 {
         font-size: auto;
     }
+    .PSurgel .slide .card-body .card-title {
+        font-size: 2rem;
+        width: auto;
+    }
     .head-viandre h3 {
         font-size: 3rem;
+    }
+    .poulet-frais .head-charcuterie h3 {
+        font-size: 4rem;
     }
 }
 
