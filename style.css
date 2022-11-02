@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@1,400;1,700&family=Dosis:wght@200;300;400&family=Lateef&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Stick+No+Bills:wght@200;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@1,400;1,700&family=Dosis:wght@200;300;400&family=Lateef&family=Roboto:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap');
+@import "/style2.css";
  :root {
     --peru: #cd9452;
     --black: #222;
@@ -25,12 +27,13 @@
 }
 
 body {
-    /* background: #121214;
+    align-items: center;
+    /* background: #121214; background-image: url(./assets/bg4.jpg); background: #121214;
      */
-    background-image: url(./assets/bg4.jpg);
+    background: #121214;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 100vh;
+    padding: 1rem;
 }
 
 *>img {
@@ -57,10 +60,6 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--peru);
 }
 
-section {
-    padding: 5rem 10%;
-}
-
 .header {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -74,6 +73,7 @@ section {
     right: 0;
     z-index: 0;
     background-color: rgb(8, 7, 7);
+    padding: 0.5rem;
 }
 
 .header a {
@@ -86,13 +86,14 @@ section {
     transition: transform .3s;
 }
 
-.header:hover {
+
+/* .header:hover {
     transform: scale(1.1)
 }
 
 .header a:hover {
     transform: scale(1.1);
-}
+} */
 
 .header .logochahada img {
     width: 100%;
@@ -128,7 +129,8 @@ section {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: #121214
+    background-color: #121214;
+    padding: 0.5rem;
 }
 
 .menu .navbar a {
@@ -286,6 +288,7 @@ section {
     color: white;
     margin-bottom: 20rem;
     background: #282a2b;
+    padding: 0.5rem;
 }
 
 .about .beuf1 {
@@ -349,23 +352,22 @@ h3 {
 }
 
 .poulet-frais {
-    margin-bottom: 20rem;
+    margin-bottom: 2rem;
     background: #282a2b;
     justify-items: center;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .poulet-frais .head-poule {
     text-align: center;
     font-size: 5rem;
-    padding: 2rem;
     color: white;
     margin-bottom: 1rem;
 }
 
 .poulet-frais .head-poule h3 {
     font-family: 'Satisfy', sans-serif;
-    margin-top: -4rem;
     box-shadow: 0px 0px 40px 4px rgb(17, 16, 14);
     border-radius: 30px;
 }
@@ -459,14 +461,15 @@ h3 {
 .PSurgel {
     text-align: center;
     background: #282a2b;
-    margin-bottom: 20rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
 }
 
 .head-surgel h3 {
     font-family: 'Satisfy', sans-serif;
     font-size: 4.5rem;
     color: white;
-    margin-top: -22px;
+    margin-top: 24px;
     margin-bottom: 2.2rem;
 }
 
@@ -507,12 +510,14 @@ h3 {
     font-size: 2.6rem;
     font-weight: 700;
     color: white;
+    margin-top: 202px;
 }
 
 .heading h3 {
     font-size: 4.5rem;
     color: hsla(149, 91%, 37%, 0.802);
     font-weight: 700;
+    margin-top: 22px;
 }
 
 .heading h3:hover {
@@ -521,19 +526,22 @@ h3 {
 
 .food {
     background: #282a2b;
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
+    padding: 0.5rem;
 }
 
 .food .slide {
     height: 484px;
     align-items: center;
     text-align: center;
-    transform: scale(.7);
+    transform: scale(.9);
     opacity: .3;
     z-index: 0;
     background: #e8e8ee;
     cursor: pointer;
     border-radius: 6px;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .food .swiper-slide-active {

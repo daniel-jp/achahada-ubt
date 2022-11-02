@@ -87,7 +87,7 @@ document.querySelectorAll('.food .slide').forEach((food) => {
             if (name == target) {
                 preview.classList.add('active');
             }
-        });
+        })
     }
 });
 
@@ -98,4 +98,4 @@ flyerPreviewContainer
         PreviewBox.forEach((close) => {
             close.classList.remove('active')
         });
-    });
+    })
