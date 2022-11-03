@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/css/gourmand.css" />
     <title>Achahada-ubt</title>
 </head>
 
@@ -28,12 +28,17 @@
         </a>
     </section>
     <section class="menu">
+
+        <a href="#" class="resto"> <i class="fa fa-cutlery" aria-hidden="true"></i> Achahada</a>
         <nav class="navbar">
-            <a href="#produit"> Poélées</a>
-            <a href="#about"> Dorées</a>
-            <a href="#poulet-frais"> Poulet</a>
-            <a href="#charcuterie"> Charcuterie</a>
-            <a href="#Viande">Viande de caractère</a>
+            <ul>
+                <li><a href="#produit">Viande</a></li>
+                <li><a href="#about"> Filet </a></li>
+                <li><a href="#poulet-frais">Alies </a></li>
+                <li><a href="#charcuterie"> Charcuterie</a></li>
+
+            </ul>
+
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
@@ -87,8 +92,8 @@
                 <div class="swiper-slide slide" style="background: url(/assets/slidem1.jpg) no-repeat">
                     <div class="content">
                         <span>
-                            Variez les plaisirs, il y en a pour tous les goût-rmands.
-                        </span>
+                    Variez les plaisirs, il y en a pour tous les goût-rmands.
+                </span>
                         <h3>MIAM MIIAAAM...</h3>
                         <a href="#" class="btn"> En savoir en plus </a>
                     </div>
@@ -96,8 +101,8 @@
                 <div class="swiper-slide slide" style="background: url(/assets/slidem2.jpg) no-repeat">
                     <div class="content">
                         <span>
-                            Le façon bouchère sous un nouvel emballage, bientôt disponible !
-                        </span>
+                    Le façon bouchère sous un nouvel emballage, bientôt disponible !
+                </span>
                         <h3>HE'S BACK DON'T PANIK</h3>
                         <a href="#" class="btn">En savoir en plus </a>
                     </div>
@@ -158,11 +163,15 @@
         </div>
     </section>
 
+
+
+    <!--POULETT-FRAIS-->
     <section class="poulet-frais">
         <div class="head-poule">
             <h3>Produits frais</h3>
         </div>
 
+        <!--POULET-->
         <div class="poulet">
             <div class="card">
                 <img src="/assets/Imagem1.png" alt="Imagem1" />
@@ -216,6 +225,8 @@
             </div>
         </div>
 
+
+        <!--CHARCUTERIE-->
         <div class="head-charcuterie">
             <h3>charcuterie</h3>
         </div>
@@ -325,6 +336,8 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+
+
     </section>
 
     <div class="gourmands">
@@ -337,50 +350,58 @@
 
             <div class="flex-item-left">
                 <div class="card">
+                    <div class="shop"><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+</a></div>
                     <img src="/assets/imag/Imagem14.png" alt="Imagem5" />
 
                     <div id="texts" class="card-body">
                         <h3>Nems dinde 280g
                         </h3>
                         <p> 4.85 €.</p>
-                        <a href="#">+</a>
+
                     </div>
                 </div>
             </div>
             <div class="flex-item-left">
                 <div class="card">
+                    <div class="shop"><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+</a></div>
                     <img src="/assets/imag/img2.png" alt="Imagem5" />
 
                     <div id="texts" class="card-body">
                         <h3>Lamelles de kebab 1kg
                         </h3>
                         <p> 11.99 €</p>
-                        <a href="#">+</a>
+
                     </div>
                 </div>
             </div>
 
             <div class="flex-item-left">
                 <div class="card">
+                    <div class="shop"><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+</a></div>
                     <img src="/assets/imag/Imagem15.png" alt="Imagem5" />
 
                     <div id="texts" class="card-body">
                         <h3>Crousty Tenders 800g
                         </h3>
                         <p> 9.40 €.</p>
-                        <a href="#"></a>
+
                     </div>
                 </div>
             </div>
             <div class="flex-item-left">
                 <div class="card">
+                    <div class="shop"><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+</a></div>
                     <img src="/assets/imag/img17.png" alt="Imagem5" />
 
                     <div id="texts" class="card-body">
                         <h3>Chicken BURGER 800g
                         </h3>
                         <p>9.30 €</p>
-                        <a href="#">+</a>
+
                     </div>
                 </div>
             </div>
@@ -392,50 +413,58 @@
         <section class="right-container">
             <div class="flex-item-right">
                 <div class="card">
+                    <div class="shop"><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+</a></div>
                     <img src="/assets/imag/img18.png" alt="Imagem5" />
 
                     <div id="texts" class="card-body">
                         <h3>Chicken nuggets pâte beignet 800g
                         </h3>
                         <p> 9.20 €.</p>
-                        <a href="#">+</a>
+
                     </div>
                 </div>
             </div>
             <div class="flex-item-right">
                 <div class="card">
+                    <div class="shop"><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+</a></div>
                     <img src="/assets/imag/img21.png" alt="Imagem5" />
 
                     <div id="texts" class="card-body ">
                         <h3>Pop Nuggets (filet de poulet) 800g
                         </h3>
                         <p> 11.80 €</p>
-                        <a href="#">+</a>
+
                     </div>
                 </div>
             </div>
 
             <div class="flex-item-right">
                 <div class="card">
+                    <div class="shop"><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+</a></div>
                     <img src="/assets/imag/img20.png" alt="Imagem5" />
 
                     <div class="card-body">
                         <h3>Original WINGS (hot spicy) 800g
                         </h3>
                         <p> 8.50 €</p>
-                        <a href="#">+</a>
+
                     </div>
                 </div>
             </div>
             <div class="flex-item-right">
                 <div class="card">
+                    <div class="shop"><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+</a></div>
                     <img src="/assets/imag/img22.png" alt="Imagem5" />
 
                     <div id="texts" class="card-body">
                         <h3>Cordon bleu 1kg
                         </h3>
                         <p> 11.90 €</p>
-                        <a href="#">+</a>
+
                     </div>
                 </div>
             </div>
@@ -463,8 +492,8 @@
                             <p>this is flyer is about....</p>
                         </div>
                         <span>
-                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-                        </span>
+            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
+        </span>
                     </div>
 
                 </div>
@@ -478,8 +507,8 @@
                         </div>
 
                         <span>
-                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-                        </span>
+            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
+        </span>
                     </div>
                 </div>
                 <div class="swiper-slide slide" data-name="food-3">
@@ -492,8 +521,8 @@
                         </div>
 
                         <span>
-                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-                        </span>
+            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
+        </span>
                     </div>
                 </div>
                 <div class="swiper-slide slide" data-name="food-4">
@@ -506,8 +535,8 @@
                         </div>
 
                         <span>
-                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-                        </span>
+            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
+        </span>
                     </div>
                 </div>
                 <div class="swiper-slide slide" data-name="food-5">
@@ -520,8 +549,8 @@
                         </div>
 
                         <span>
-                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-                        </span>
+            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
+        </span>
                     </div>
                 </div>
             </div>
