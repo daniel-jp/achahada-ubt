@@ -1,200 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@1,400;1,700&family=Dosis:wght@200;300;400&family=Lateef&family=Petit+Formal+Script&family=Roboto:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@1,400;1,700&family=Dosis:wght@200;300;400&family=Lateef&family=Petit+Formal+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    align-items: center;
+
+/*LEFT CONTAINER*/
+
+.poulets {
+    margin-top: 5rem;
+    width: 100%;
 }
 
-.poulet-frais {
-    margin-bottom: 2rem;
-    background: #282a2b;
-    justify-items: center;
-    align-items: center;
-    padding: 0.5rem;
-}
-
-.poulet-frais .head-poule {
-    text-align: center;
-    font-size: 5rem;
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.poulet-frais .head-poule h3 {
-    font-family: 'Satisfy', sans-serif;
-    box-shadow: 0px 0px 40px 4px rgb(17, 16, 14);
-    border-radius: 30px;
-}
-
-.poulet-frais .poulet {
-    gap: 3px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.left-item-container {
     display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    overflow-x: scroll;
 }
 
-.poulet .card {
-    margin: 1rem;
-    border-radius: 6px;
-    padding: 2px;
-}
-
-.poulet .card img {
-    border-radius: 1rem;
-    font-weight: bold;
-    margin-bottom: 1.4rem;
-}
-
-.poulet .card:hover {
-    transform: scale(1.2);
-    opacity: 1;
-    box-shadow: var(--box-shadow);
-}
-
-.poulet .card-title {
-    font-size: 1.3rem;
-    color: var(--peru);
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.poulet .card-body p {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: white
-}
-
-.poulet-frais .head-charcuterie {
+.head-poule h3 {
+    font-family: 'Dancing Script', cursive;
     text-align: center;
-    font-size: 5rem;
-    color: white;
-    box-shadow: 0px 0px 40px 4px rgb(17, 16, 14);
-    border-radius: 30px;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: rgb(18, 11, 11);
+    margin-top: 24px;
+    text-transform: uppercase;
 }
 
-.poulet-frais .head-charcuterie h3 {
-    font-family: 'Satisfy', sans-serif;
+.left-item-container .flex-item-poule {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
 }
 
-.poulet-frais .charcuterie {
-    display: flex;
-    gap: 3rem;
-    align-items: center;
+.flex-item-poule .card {
     text-align: center;
+    height: 290px;
+    padding: 1rem;
 }
 
-.poulet-frais .charcuterie .card {
-    border-radius: 6px;
+.left-item-container .flex-item-poule .card img {
+    height: 156px;
+    padding: 1rem;
 }
 
-.poulet-frais .charcuterie .card:hover {
-    transform: scale(1.2);
-    box-shadow: var(--box-shadow);
+.flex-item-poule .card .card-body h3 {
+    font-size: 1.5rem;
+    color: #b78011e9;
+    flex-wrap: wrap;
 }
 
-.charcuterie .card img {
-    border-radius: 1rem;
-    margin-bottom: 1.3rem;
-}
-
-.charcuterie .card h3 {
+.flex-item-poule .card .card-body p {
+    color: #f02fb6;
+    font-style: italic;
     font-size: 2rem;
-    color: var(--peru);
-    font-weight: bold;
-    margin-bottom: 1rem;
 }
 
-.charcuterie .card-body p {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: white;
+.flex-item-poule .card .card-body p:hover {
+    transform: scale(1.2);
+    color: #1d71e7;
 }
 
 
-/*
+/*RIGHT CONTAINER*/
 
-        Media Queries */
+.right-item-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    overflow-x: scroll;
+}
+
+.poulets .head-charcuterie h3 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(18, 11, 11);
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+
+.right-item-container .flex-item-charcuterie {
+    height: 300px;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.flex-item-charcuterie .card {
+    justify-items: center;
+    text-align: center;
+    height: 290px;
+    padding: 2.5rem;
+}
+
+.right-item-container .flex-item-charcuterie .card img {
+    height: 156px;
+    padding: 1rem;
+}
+
+.flex-item-charcuterie .card .card-body h3 {
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    color: #b78011e9;
+}
+
+.flex-item-charcuterie .card .card-body p {
+    color: #f02fb6;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.flex-item-charcuterie .card .card-body p:hover {
+    transform: scale(1.2);
+    color: #1d71e7;
+}
+
+
+/*RESPONSIVE*/
 
 @media(max-width:1200px) {
-    section {
-        padding: 1rem 2%;
+    .poulets section {
+        padding: 2rem 4%;
     }
 }
 
 @media(max-width:991px) {
-    section {
-        padding: 1rem 2rem;
-    }
-    html {
-        font-size: 55%;
-    }
-    .produit .slide h3 {
-        font-size: 15vw;
+    .poulets section {
+        padding: 2rem 1rem;
     }
 }
 
 @media(max-width:768px) {
-    .fa-times {
-        transform: rotate(180deg);
+    .left-item-container {
+        flex-direction: column;
     }
-    .swiper-button-next,
-    .swiper-button-prev {
-        top: initial;
-        bottom: 1rem;
+    .right-item-container {
+        flex-direction: column;
     }
-    .poulet-frais .poulet {
-        display: block;
-    }
-    .poulet-frais .poulet h3 {
-        display: block;
-        text-align: center;
-    }
-    .poulet .card img {
+    .left-item-container .flex-item-poule {
         width: 100%;
-        height: auto;
     }
-    .poulet-frais .charcuterie {
-        display: block;
+    .left-item-container .flex-item-poule .card img {
+        width: 100%;
+        height: 23rem;
     }
-    .charcuterie .card img {
-        /* width: 100%; */
-        border-radius: 6px;
+    .right-item-container .flex-item-charcuterie {
+        width: 100%;
     }
-    .poulet-frais .head-charcuterie h3 {
-        text-align: center;
+    .right-item-container .flex-item-charcuterie .card img {
+        width: 100%;
+        height: 23rem;
     }
 }
 
 @media(max-width:450px) {
-    html {
-        font-size: 50%;
+    .left-item-container h3 {
+        font-size: 3vw
     }
-    .poulet-frais .head-charcuterie h3 {
-        font-size: 1.5rem;
+    .right-item-container h3 {
+        font-size: 3vw
     }
-}
-
-
-/*animations*/
-
-.header {
-    animation: FromTo .7s;
-}
-
-@keyframes FromTo {
-    from {
-        opacity: 0;
-        transform: translateY(-30);
+    .flex-item-charcuterie .card .card-body h3 {
+        font-size: 2vw
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .flex-item-poule .card .card-body p {
+        font-size: 2vw
+    }
+    .flex-item-charcuterie .card .card-body p {
+        font-size: 2vw
     }
 }
