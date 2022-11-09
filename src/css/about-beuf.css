@@ -9,18 +9,26 @@
      background: #121212;
  }
  
- .beuf1 {
+ .about .beuf1 {
      display: flex;
-     width: 100%;
+     height: 25rem;
  }
  
  .beuf1 .imag1 {
+     width: 100%;
+     height: auto;
+     display: flex;
      margin-left: auto;
      margin-right: auto;
-     height: 220px;
-     width: 220px;
-     padding: 2rem;
      border-radius: 50%;
+     margin: 1.5rem;
+ }
+ 
+ .beuf1 .imag1 .content {
+     text-align: center;
+     margin-top: 50%;
+     margin-left: auto;
+     margin-right: auto;
  }
  
  .about .beuf1 .imag1:hover {
@@ -28,10 +36,11 @@
  }
  
  .beuf1 .content {
-     margin-top: 9rem;
+     margin-top: 4rem;
  }
  
  .beuf1 .content a {
+     font-size: 2rem;
      color: rgb(244, 240, 240);
      border-radius: 30px;
      background: linear-gradient(to right, rgba(255, 122, 89, 1), rgba(255, 122, 89, 0));
@@ -63,20 +72,20 @@
  @media(max-width:768px) {
      .about .beuf1 {
          display: block;
-         width: 100%;
-         padding: 2rem 2rem;
+         height: 80%;
+         width: auto;
+         justify-items: center;
      }
      .beuf1 .imag1 {
+         height: 25rem;
+         width: 25rem;
          margin-left: auto;
          margin-right: auto;
-         height: 220px;
-         width: 220px;
-         padding: 2rem 2rem;
      }
  }
  
  @media(max-width:450px) {
      .beuf1 .content a {
-         font-size: 4vw;
+         font-size: 2vw;
      }
  }
