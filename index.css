@@ -29,7 +29,7 @@ body {
     font-size: 2rem;
     /* background: #121214; background-image: url(./assets/bg4.jpg); background: #121214;
      */
-    background: white;
+    background: #121212;
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -302,6 +302,7 @@ html::-webkit-scrollbar-thumb {
     background: #282a2b;
     margin-bottom: 2rem;
     padding: 0.5rem;
+    margin: 1.5rem;
 }
 
 .head-surgel h3 {

@@ -6,17 +6,20 @@
  
  .about {
      color: white;
-     background: #121212;
+     border: 1px solid #1b1c1c;
+     margin: 1.5rem;
+     background: #282a2b;
  }
  
  .about .beuf1 {
      display: flex;
-     height: 23rem;
+     text-align: center;
+     justify-content: center;
  }
  
  .beuf1 .imag1 {
-     width: 100%;
-     height: auto;
+     width: 250px;
+     height: 250px;
      display: flex;
      margin-left: auto;
      margin-right: auto;
@@ -54,6 +57,8 @@
      margin-top: 4rem;
      font-size: 1.5rem;
      background-color: #ccc;
+     border: 1px solid #1b1c1c;
+     margin: 1.5rem;
  }
  
  .about .text1,
@@ -61,6 +66,12 @@
  p,
  h3 {
      padding: .4rem;
+ }
+ 
+ @media(max-width:1200px) {
+     section {
+         padding: 2rem 4%;
+     }
  }
  
  @media(max-width:991px) {

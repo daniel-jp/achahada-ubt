@@ -17,13 +17,16 @@
     flex-direction: row;
     padding: 1.5rem;
     overflow-x: scroll;
+    border: 1px solid #1b1c1c;
+    margin: 1.5rem;
+    background: #282a2b;
 }
 
 .head-poule h3 {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     font-size: 3rem;
-    color: rgb(18, 11, 11);
+    color: #f1f4f5;
     margin-top: 24px;
     text-transform: uppercase;
 }
@@ -70,13 +73,16 @@
     flex-direction: row;
     padding: 1.5rem;
     overflow-x: scroll;
+    border: 1px solid #1b1c1c;
+    margin: 1.5rem;
+    background: #282a2b;
 }
 
 .poulets .head-charcuterie h3 {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     font-size: 3rem;
-    color: rgb(18, 11, 11);
+    color: #f1f4f5;
     margin-top: 24px;
     text-transform: uppercase;
 }
