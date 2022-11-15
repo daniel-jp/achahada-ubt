@@ -27,6 +27,7 @@
 
 body {
     font-size: 2rem;
+    height: 100vh;
     /* background: #121214; background-image: url(./assets/bg4.jpg); background: #121214;
      */
     background: #121212;
@@ -59,6 +60,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header {
+    height: 20%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: flex;
@@ -81,28 +83,32 @@ html::-webkit-scrollbar-thumb {
 .header .logochahada {
     align-items: center;
     justify-content: center;
+    width: 12rem;
+    height: 12rem;
 }
 
 .header .logochahada img {
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
 }
 
 .header .command {
     color: rgba(217, 6, 175, 0.872);
-    padding-top: 50px;
+    padding-top: 40px;
     font-size: 4rem;
     text-align: center;
     font-family: 'Dancing Script', cursive;
+    margin: 2rem;
 }
 
 .menu {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #121214;
+    background: #282a2b;
     box-shadow: var(--box-shadow);
     position: sticky;
     top: 0;
@@ -114,6 +120,9 @@ html::-webkit-scrollbar-thumb {
 
 .menu .achada {
     display: flex;
+    height: 60px;
+    align-items: center;
+    text-align: center;
 }
 
 .menu .achada .resto img {
@@ -129,7 +138,6 @@ html::-webkit-scrollbar-thumb {
     color: rgb(242, 238, 238);
     font-weight: bolder;
     margin-left: 1rem;
-    margin-top: 1.5rem;
 }
 
 .menu a:hover {
@@ -138,15 +146,13 @@ html::-webkit-scrollbar-thumb {
 }
 
 .menu .shop i {
-    justify-content: center;
-    color: #aaa;
+    color: green;
     margin-right: 2rem;
 }
 
 .menu .navbar {
     list-style: none;
     display: flex;
-    margin: 2rem;
 }
 
 .menu .navbar a {
@@ -170,45 +176,29 @@ html::-webkit-scrollbar-thumb {
 
 @keyframes fadeIn {
     0% {
-        transform: translateY(-1rem) scale(0);
+        transform: translateY(-4rem) scale(0);
         opacity: 0;
     }
 }
 
 .produit {
-    padding: 0%;
+    padding: 0;
     background: var(--black);
-}
-
-.btn {
-    margin-top: 1rem;
-    display: inline-block;
-    background-image: linear-gradient(90deg, #7d0a7f 0%, #282a2b 100%);
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 1rem 3rem;
-    border-radius: 30px;
-}
-
-.btn:hover {
-    letter-spacing: .2rem;
 }
 
 .produit .swiper-wrapper .slide {
     min-height: 100vh;
     background-size: cover !important;
-    background-position: center !important;
     position: relative;
     z-index: 0;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .produit .slide::before {
     content: '';
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -220,7 +210,6 @@ html::-webkit-scrollbar-thumb {
 .produit .slide .content {
     text-align: center;
     width: 70rem;
-    display: none;
 }
 
 .produit .slide .content span {
@@ -235,38 +224,52 @@ html::-webkit-scrollbar-thumb {
     font-size: 8vw;
     text-transform: uppercase;
     color: var(--white);
-    text-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, .7);
+    text-shadow: 0.5rem 0.3rem rgba(0, 0, 0, .7);
     line-height: 1;
     padding: 2rem 0;
     animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34).4s backwards;
 }
 
-.produit .slide .content .btn {
+.produit .slide .content .btnp {
+    margin-top: 1rem;
+    display: inline-block;
+    background-image: linear-gradient(90deg, #7d0a7f 0%, #282a2b 100%);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 30px;
     animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34).6s backwards;
+}
+
+.btnp:hover {
+    letter-spacing: .2rem;
 }
 
 .produit .swiper-slide-active .content {
     display: inline-block;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    background-image: linear-gradient(90deg, #8e09b6 0%, #307a12 100%);
-    color: rgb(227, 216, 216);
+.produit .swiper-button-next,
+.produit .swiper-button-prev {
+    height: 2rem;
+    width: 2rem;
+    line-height: 3rem;
+    background: linear-gradient(90deg, #7d0a7f 0%, #282a2b 100%);
+    color: var(--white);
+    padding: 3rem;
     border-radius: 30px;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    font-size: 2rem;
+.produit .swiper-button-next::after,
+.produit .swiper-button-prev::after {
+    font-size: 3rem;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    transform: scale(1.1)
+.produit .swiper-button-next:hover,
+.produit .swiper-button-prev:hover {
+    background: var(--peru);
+    color: var(--black);
 }
 
 .head-viandre {
@@ -297,11 +300,9 @@ html::-webkit-scrollbar-thumb {
     margin-bottom: 2rem;
 }
 
-.PSurgel {
+.pSurgel {
     text-align: center;
     background: #282a2b;
-    margin-bottom: 2rem;
-    padding: 0.5rem;
     margin: 1.5rem;
 }
 
@@ -313,34 +314,35 @@ html::-webkit-scrollbar-thumb {
     font-family: 'Dancing Script', cursive;
 }
 
-.PSurgel .slide {
+.pSurgel .slide {
     text-align: center;
     cursor: pointer;
-    height: 350px;
+    padding-bottom: 1.5rem;
 }
 
-.PSurgel .swiper-slide-active {
+.pSurgel .swiper-slide-active {
     box-shadow: var(--box-shadow);
 }
 
-.PSurgel .slide .card-body {
+.pSurgel .slide .card-body {
     color: white;
     text-align: center;
 }
 
-.PSurgel .slide img {
+.pSurgel .slide img {
     width: 70%;
     height: 230px;
     margin-bottom: 1.2rem;
+    border-radius: 1rem;
 }
 
-.PSurgel .slide .card-body h3 {
-    font-size: 1.3rem;
+.pSurgel .slide .card-body h3 {
+    font-size: 1.5rem;
     color: var(--peru);
 }
 
-.PSurgel .slide .card-body p {
-    font-size: 1rem;
+.pSurgel .slide .card-body p {
+    font-size: 3rem;
     color: hsla(149, 91%, 37%, 0.802);
     margin-bottom: 1rem;
 }
@@ -371,15 +373,15 @@ html::-webkit-scrollbar-thumb {
 }
 
 .food .slide {
-    height: 484px;
+    height: 480px;
     align-items: center;
     text-align: center;
     transform: scale(.9);
-    opacity: .3;
+    opacity: .5;
     z-index: 0;
     background: #e8e8ee;
     cursor: pointer;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .food .swiper-slide-active {
@@ -390,13 +392,14 @@ html::-webkit-scrollbar-thumb {
 }
 
 .food .slide img {
-    width: 100%;
+    width: 95%;
     height: 400px;
+    padding-top: 1rem;
 }
 
 .food .slide .card {
     text-align: center;
-    background-color: #282a2b;
+    background: #e8e8ee;
     height: 137px;
 }
 
@@ -410,7 +413,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .food .slide .card .card-text {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: rgb(11, 10, 10);
     margin-top: 2rem;
     padding: 2rem;
@@ -430,8 +433,8 @@ html::-webkit-scrollbar-thumb {
     position: fixed;
     top: 0;
     left: 0;
-    right: 100%;
     width: 100%;
+    height: 100%;
     z-index: 1100;
     display: none;
     align-items: center;
@@ -441,22 +444,23 @@ html::-webkit-scrollbar-thumb {
 .flyer-preview-container .flyer-preview {
     text-align: center;
     background: var(--white);
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
     border-radius: .5rem;
-    width: 34rem;
     display: none;
+    width: 28rem;
+    height: 49rem;
+}
+
+.flyer-preview-container .flyer-preview img {
+    width: 24rem;
+    height: 24rem;
+    margin-bottom: .2rem;
+    border-radius: 100%;
 }
 
 .flyer-preview-container .flyer-preview.active {
     display: inline-block;
     animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34).2s backwards;
-}
-
-.flyer-preview-container .flyer-preview img {
-    height: 30rem;
-    width: 30rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
 }
 
 .flyer-preview-container .flyer-preview h3 {
@@ -466,7 +470,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .flyer-preview-container .flyer-preview .stars {
-    margin-top: 5rem;
+    margin-top: .5rem;
 }
 
 .flyer-preview-container .flyer-preview .stars i {
@@ -474,27 +478,68 @@ html::-webkit-scrollbar-thumb {
     color: var(--peru);
 }
 
-.flyer-preview-container .flyer-preview .stars p {
-    font-size: 2rem;
-    color: var(--light-black);
-    padding: 1rem 0;
-    line-height: 2;
+.flyer-preview-container .flyer-preview p {
+    font-size: 1.9rem;
+    color: var(--black);
+    padding: 1rem 2rem;
+    line-height: 1;
 }
 
-div .phon {
+.flyer-preview-container .flyer-preview .price {
+    font-size: 1.9rem;
+    color: green;
+    padding: 1rem;
+    margin-top: -1rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.flyer-preview-container .flyer-preview .phon {
     font-family: 'Fasthand', sans-serif;
     background: var(--peru);
-    height: 4rem;
     text-align: center;
     font-size: 2rem;
     padding-top: .3rem;
-    border-radius: 30px;
+    padding: 0.5rem;
+    border-radius: 3px;
 }
 
-.flyer-preview-container .flyer-preview .stars .phon {
-    color: var(--black);
-    margin-bottom: 5rem;
+#close-preview {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid#efedf3;
+    width: 3.2rem;
+    height: 3.2rem;
+    text-align: center;
 }
+
+#close-preview:hover {
+    transform: rotate(90deg);
+}
+
+
+/* 
+
+
+
+
+
+.flyer-preview-container .flyer-preview.active {
+    display: inline-block;
+    animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34).2s backwards;
+}
+
+
+
+
+
+
+
 
 #close-preview {
     position: absolute;
@@ -509,13 +554,6 @@ div .phon {
     height: 3.2rem;
     text-align: center;
 }
-
-#close-preview:hover {
-    transform: rotate(90deg);
-}
-
-
-/*
 
         Media Queries */
 
@@ -533,7 +571,7 @@ div .phon {
         font-size: 55%;
     }
     .produit .slide h3 {
-        font-size: 15vw;
+        font-size: 10vw;
     }
     .header .command {
         font-size: 4vw;
@@ -574,8 +612,8 @@ div .phon {
         padding: 1rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-    .swiper-button-next,
-    .swiper-button-prev {
+    .produit .swiper-button-next,
+    .produit .swiper-button-prev {
         top: initial;
         bottom: 1rem;
     }
@@ -599,13 +637,13 @@ div .phon {
         font-size: 50%;
     }
     .produit .slide .content h3 {
-        font-size: 1rem;
+        font-size: 4rem;
     }
     .produit .slide .content span {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .produit .slide .content a {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .header .command {
         font-size: 2.5rem;

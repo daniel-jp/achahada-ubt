@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./index.css" />
     <title>Achahada-ubt</title>
 </head>
@@ -29,9 +30,10 @@
             <p>Achahada</p>
         </div>
         <nav class="navbar">
-            <a href="#produit">Viande</a>
-            <a href="#about">Filet</a>
-            <a href="#poulet-frais">Alies</a>
+            <a href="#viande">Viande</a>
+            <a href="#boeuf">Boeuf</a>
+            <a href="#pouletFrais">Alies</a>
+            <a href="#gourmands">gourmands</a>
             <a href="#charcuterie">Charcuterie</a>
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -41,77 +43,80 @@
     </section>
 
 
-    <section class="produit" id="produit">
-        <div class="produit-slider">
+    <section class="produit">
+        <div class="swiper produit-slider">
 
-            <div class="swiper-slide slide" style="background: url(/assets/beuf1.jpg) no-repeat">
-                <div class="content">
-                    <span>Viandre fraîche exceptionnelle. </span>
-                    <h3>cuisine délicieuse</h3>
-                    <a href="#" class="btn"> En savoir en plus</a>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background: url(/assets/beuf1.jpg) no-repeat">
+                    <div class="content">
+                        <span>Viandre fraîche exceptionnelle. </span>
+                        <h3>cuisine délicieuse</h3>
+                        <a href="#" class="btnp"> En savoir en plus</a>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide slide" style="background: url(/assets/aliesPou.jpg) no-repeat">
-                <div class="content">
-                    <span> alies de poulet fraîche exceptionnelle. </span>
-                    <h3>cuisine délicieuse</h3>
-                    <a href="#" class="btn"> En savoir en plus</a>
+                <div class="swiper-slide slide" style="background: url(/assets/aliesPou.jpg) no-repeat">
+                    <div class="content">
+                        <span> alies de poulet fraîche exceptionnelle. </span>
+                        <h3>cuisine délicieuse</h3>
+                        <a href="#" class="btnp"> En savoir en plus</a>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide slide" style="background: url(/assets/filetp2.jpeg) no-repeat">
-                <div class="content">
-                    <span> Filet de poulet fraîche exceptionnelle. </span>
-                    <h3>cuisine délicieuse</h3>
-                    <a href="#" class="btn">En savoir en plus</a>
+                <div class="swiper-slide slide" style="background: url(/assets/filetp2.jpeg) no-repeat">
+                    <div class="content">
+                        <span> Filet de poulet fraîche exceptionnelle. </span>
+                        <h3>cuisine délicieuse</h3>
+                        <a href="#" class="btnp">En savoir en plus</a>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide slide" style="background: url(/assets/filetDinde.jpg) no-repeat">
-                <div class="content">
-                    <span>Filet frais de blanc de dinde sur la planche</span>
-                    <h3>à découper</h3>
-                    <a href="#" class="btn"> En savoir en plus </a>
+                <div class="swiper-slide slide" style="background: url(/assets/filetDinde.jpg) no-repeat">
+                    <div class="content">
+                        <span>Filet frais de blanc de dinde sur la planche</span>
+                        <h3>à découper</h3>
+                        <a href="#" class="btnp"> En savoir en plus </a>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide slide" style="background: url(/assets/viandB.jpg) no-repeat">
-                <div class="content">
-                    <span> Viande de beuf fraîche exceptionnelle. </span>
-                    <h3>cuisine délicieuse</h3>
-                    <a href="#" class="btn"> En savoir en plus </a>
+                <div class="swiper-slide slide" style="background: url(/assets/viandB.jpg) no-repeat">
+                    <div class="content">
+                        <span> Viande de beuf fraîche exceptionnelle. </span>
+                        <h3>cuisine délicieuse</h3>
+                        <a href="#" class="btnp"> En savoir en plus </a>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide slide" style="background: url(/assets/poul1.jpg) no-repeat">
-                <div class="content">
-                    <span> poulet fraîche exceptionnelle. </span>
-                    <h3>cuisine délicieuse</h3>
-                    <a href="#" class="btn">En savoir en plus</a>
+                <div class="swiper-slide slide" style="background: url(/assets/poul1.jpg) no-repeat">
+                    <div class="content">
+                        <span> poulet fraîche exceptionnelle. </span>
+                        <h3>cuisine délicieuse</h3>
+                        <a href="#" class="btnp">En savoir en plus</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="swiper-slide slide" style="background: url(/assets/slidem1.jpg) no-repeat">
-                <div class="content">
-                    <span>
+                <div class="swiper-slide slide" style="background: url(/assets/slidem1.jpg) no-repeat">
+                    <div class="content">
+                        <span>
                     Variez les plaisirs, il y en a pour tous les goût-rmands.
                 </span>
-                    <h3>MIAM MIIAAAM...</h3>
-                    <a href="#" class="btn"> En savoir en plus </a>
+                        <h3>MIAM MIIAAAM...</h3>
+                        <a href="#" class="btnp"> En savoir en plus </a>
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide slide" style="background: url(/assets/slidem2.jpg) no-repeat">
-                <div class="content">
-                    <span>
+                <div class="swiper-slide slide" style="background: url(/assets/slidem2.jpg) no-repeat">
+                    <div class="content">
+                        <span>
                     Le façon bouchère sous un nouvel emballage, bientôt disponible !
                 </span>
-                    <h3>HE'S BACK DON'T PANIK</h3>
-                    <a href="#" class="btn">En savoir en plus </a>
+                        <h3>HE'S BACK DON'T PANIK</h3>
+                        <a href="#" class="btnp">En savoir en plus </a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" id="viande">
         <div class="text1">
             <h2>
                 Boucherie en Ligne Halal et Livraison à Domicile Les Meilleurs Artisans Bouchers à votre service dans notre Boucherie et charcuterie halal en livraison
@@ -158,7 +163,7 @@
     </section>
 
 
-    <div class="poulets">
+    <div class="poulets" id="pouletFrais">
         <div class="head-poule">
             <h3>Produits frais</h3>
         </div>
@@ -231,7 +236,7 @@
 
 
 
-        <div class="head-charcuterie">
+        <div class="head-charcuterie" . id="charcuterie">
             <h3>charcuterie</h3>
         </div>
         <section class="right-item-container">
@@ -297,11 +302,12 @@
     </div>
 
 
-    <section class="PSurgel" id="PSurgel">
+    <section class="pSurgel" id="boeuf">
         <div class="head-surgel">
             <h3>Produits surgelés pur boeuf</h3>
         </div>
         <div class="swiper surgel-slide">
+
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide" data-name="food-1">
                     <img src="/assets/steaks/steak1.png" alt="Imagem2" />
@@ -350,12 +356,15 @@
 
                     </div>
                 </div>
+
             </div>
             <div class="swiper-pagination"></div>
+
         </div>
+
     </section>
 
-    <div class="gourmands">
+    <div class="gourmands" id="gourmands">
         <div class="head-gourmands">
             <h3>Produits gourmands surgelés</h3>
         </div>
@@ -417,6 +426,7 @@
             <!--Produits gourmands surgelés-->
 
         </section>
+
         <section class="right-container">
             <div class="flex-item-right">
                 <div class="card">
@@ -479,6 +489,7 @@
 
         </div>
         <div class="swiper flyer-slide">
+
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide" data-name="food-1">
                     <img src="/assets/flye1.jpg" alt="flyer1" />
@@ -489,9 +500,7 @@
                         <div class="card-text">
                             <p>this is flyer is about....</p>
                         </div>
-                        <span>
-                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-                    </span>
+                        <span><i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431</span>
                     </div>
 
                 </div>
@@ -504,9 +513,7 @@
                             <p>this is flyer is about....</p>
                         </div>
 
-                        <span>
-            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-        </span>
+                        <span> <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431</span>
                     </div>
                 </div>
                 <div class="swiper-slide slide" data-name="food-3">
@@ -518,9 +525,7 @@
                             <p>this is flyer is about....</p>
                         </div>
 
-                        <span>
-            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-        </span>
+                        <span><i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431 </span>
                     </div>
                 </div>
                 <div class="swiper-slide slide" data-name="food-4">
@@ -531,10 +536,7 @@
                         <div class="card-text">
                             <p>this is flyer is about....</p>
                         </div>
-
-                        <span>
-            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-        </span>
+                        <span><i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431</span>
                     </div>
                 </div>
                 <div class="swiper-slide slide" data-name="food-5">
@@ -546,9 +548,7 @@
                             <p>this is flyer is about....</p>
                         </div>
 
-                        <span>
-            <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431
-        </span>
+                        <span> <i class="fa fa-volume-control-phone" aria-hidden="true"></i></i> (+212) 0618675431</span>
                     </div>
                 </div>
             </div>
@@ -556,74 +556,86 @@
         </div>
     </section>
 
+
+
     <section class="flyer-preview-container">
         <div id="close-preview" class="fas fa-times"></div>
-        <div class="flyer-preview" data-target="food-1 ">
-            <img src="/assets/flye1.jpg" alt="flyer1 " />
+
+        <div class="flyer-preview active" data-target="food-1">
+            <img src="./assets/flye1.jpg" alt="flyer1" />
 
             <h3>Flayer 1</h3>
             <div class="stars">
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
             </div>
             <p>Appelez-nous pour la livraison</p>
-            <div class="phon ">Tel: (+212) 0618675431</div>
-        </div>
-        <div class="flyer-preview" data-target="food-2">
-            <img src="/assets/flye2.jpg " alt="flyer2 " />
-
-            <h3>Flayer 1</h3>
-            <div class="stars ">
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-            </div>
-            <p>Appelez-nous pour la livraison</p>
+            <div class="price">12.6€</div>
             <div class="phon">Tel: (+212) 0618675431</div>
         </div>
-        <div class="flyer-preview " data-target="food-3">
-            <img src="/assets/flye3.jpg" alt="flyer3 " />
+        <div class="flyer-preview" data-target="food-2">
+            <img src="./assets/flye2.jpg" alt="flyer2" />
 
-            <h3>Flayer 1</h3>
+            <h3>Flayer 2</h3>
             <div class="stars ">
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
             <p>Appelez-nous pour la livraison</p>
+            <div class="price">11.4€</div>
+            <div class="phon">Tel: (+212) 0618675431</div>
+        </div>
+        <div class="flyer-preview" data-target="food-3">
+            <img src="./assets/flye3.jpg" alt="flyer3 " />
+
+            <h3>Flayer 3</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Appelez-nous pour la livraison</p>
+            <div class="price">12.5€</div>
             <div class="phon">Tel: (+212) 0618675431</div>
         </div>
         <div class="flyer-preview" data-target="food-4">
-            <img src="/assets/flye4.jpg" alt="flyer4" />
+            <img src="./assets/flye4.jpg" alt="flyer4" />
 
-            <h3>Flayer 1</h3>
+            <h3>Flayer 4</h3>
             <div class="stars ">
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
             <p>Appelez-nous pour la livraison</p>
+            <div class="price">10.3€</div>
             <div class="phon">Tel: (+212) 0618675431</div>
         </div>
         <div class="flyer-preview" data-target="food-5">
-            <img src="/assets/flye6.jpg" alt="flyer5" />
-            <h3>Flayer 1</h3>
-            <div class="stars ">
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
-                <i class="fas fa-star "></i>
+            <img src="./assets/flye6.jpg" alt="flyer5" />
+            <h3>Flayer 5</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
             <p>Appelez-nous pour la livraison</p>
+            <div class="price">13.2€</div>
             <div class="phon">Tel: (+212) 0618675431</div>
         </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="/main.js"></script>

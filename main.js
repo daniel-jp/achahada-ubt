@@ -17,26 +17,54 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-
-const swiper = new Swiper(".produit-slider", {
+var swiper = new Swiper(".produit-slider", {
     grabCursor: true,
     loop: true,
     centeredSlides: true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+var swiper = new Swiper(".surgel-slide", {
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        700: {
+            slidesPerView: 2,
+        },
+        1000: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });
 
 
 
-
-const swiper2 = new Swiper('.flyer-slide', {
+var swiper = new Swiper(".flyer-slide", {
     grabCursor: true,
     loop: true,
     centeredSlides: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true,
     },
     breakpoints: {
@@ -53,52 +81,34 @@ const swiper2 = new Swiper('.flyer-slide', {
 });
 
 
-const swiper3 = new Swiper(".surgel-slide", {
-    grabCursor: true,
-    loop: true,
-    centeredSlides: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        700: {
-            slidesPerView: 2,
-        },
-        1000: {
-            slidesPerView: 3,
-        },
-
-    },
-});
 
 
-let flyerPreviewContainer = document.querySelector('.flyer-preview-container')
-let PreviewBox = flyerPreviewContainer.querySelector('.flyer-preview')
 
-// document.querySelectorAll('.food .slide').forEach((food) => {
-//     flyerPreviewContainer.style.display = 'flex';
 
-//     food.onclick = () => {
-//         let name = food.getAttribute('data-name');
 
-//         PreviewBox.forEach(preview => {
-//             let target = preview.getAttribute('data-target');
-//             if (name == target) {
-//                 preview.classList.add('active');
-//             }
-//         });
-//     };
-// });
+let flyerPreviewContainer = document.querySelector(".flyer-preview-container")
+let PreviewBox = flyerPreviewContainer.querySelectorAll(".flyer-preview")
 
-flyerPreviewContainer
-    .querySelector('#close-preview')
-    .addEventListener('click', () => {
-        flyerPreviewContainer.style.display = 'none';
-        PreviewBox.forEach((close) => {
-            close.classList.remove('active')
+document.querySelectorAll(".food .slide").forEach(food => {
+    flyerPreviewContainer.style.display = "flex";
+
+    food.addEventListener("click", () => {
+        flyerPreviewContainer.style.display = 'flex';
+        let name = food.getAttribute("data-name");
+        PreviewBox.forEach(preview => {
+            let target = preview.getAttribute("data-target");
+            if (name == target) {
+                preview.classList.add('active');
+            }
         });
-    })
+    });
+});
+
+flyerPreviewContainer.querySelector('#close-preview')
+
+.addEventListener("click", () => {
+    flyerPreviewContainer.style.display = 'none';
+    PreviewBox.forEach(close => {
+        close.classList.remove('active')
+    });
+});

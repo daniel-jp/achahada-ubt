@@ -44,10 +44,11 @@
  
  .beuf1 .content a {
      font-size: 2rem;
-     color: rgb(244, 240, 240);
+     color: rgba(249, 247, 249, 0.968);
      border-radius: 30px;
-     background: linear-gradient(to right, rgba(255, 122, 89, 1), rgba(255, 122, 89, 0));
+     background: linear-gradient(to right, rgb(11, 11, 11), rgba(255, 122, 89, 0));
      padding: 1rem;
+     font-weight: 700;
  }
  
  .about .text1 {
