@@ -10,6 +10,8 @@
 .poulets {
     margin-top: 5rem;
     width: 100%;
+    margin-bottom: 3rem;
+    ;
 }
 
 .left-item-container {
@@ -49,15 +51,17 @@
 }
 
 .flex-item-poule .card .card-body h3 {
-    font-size: 1.5rem;
-    color: #b78011e9;
+    color: #f6f4f2e9;
+    font-size: 2rem;
+    font-weight: bold;
     flex-wrap: wrap;
 }
 
 .flex-item-poule .card .card-body p {
-    color: #f02fb6;
+    color: #a32ff0;
     font-style: italic;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .flex-item-poule .card .card-body p:hover {
@@ -106,16 +110,18 @@
 }
 
 .flex-item-charcuterie .card .card-body h3 {
-    font-size: 1.5rem;
     flex-wrap: wrap;
     margin-top: 1rem;
-    color: #b78011e9;
+    color: #f6f4f2e9;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .flex-item-charcuterie .card .card-body p {
-    color: #f02fb6;
+    color: #a32ff0;
     font-style: italic;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .flex-item-charcuterie .card .card-body p:hover {

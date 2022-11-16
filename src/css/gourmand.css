@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     background: #282a2b;
     border: 1px solid #282a2b;
     margin: 1.5rem;
@@ -48,14 +48,16 @@
 
 .flex-item-left .card .card-body h3 {
     margin-top: 1rem;
-    color: #b78011e9;
-    font-size: 1.5rem;
+    color: #f6f4f2e9;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .flex-item-left .card .card-body p {
-    color: #f02fb6;
+    color: #a32ff0;
     font-style: italic;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .flex-item-left .card .card-body p:hover {
@@ -76,6 +78,7 @@
     background: #282a2b;
     border: 1px solid #282a2b;
     margin: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .right-container .flex-item-right {
@@ -94,14 +97,16 @@
 
 .flex-item-right .card .card-body h3 {
     margin-top: 1rem;
-    color: #b78011e9;
-    font-size: 1.5rem;
+    color: #f6f4f2e9;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .flex-item-right .card .card-body p {
-    color: #f02fb6;
+    color: #a32ff0;
     font-style: italic;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .flex-item-right .card .card-body p:hover {

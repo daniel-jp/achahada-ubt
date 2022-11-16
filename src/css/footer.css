@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    background: black;
+}
+
+.footer .icons-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .icons-conteiner .icons {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.footer .icons-conteiner .icons i {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: white;
+    color: rgb(39, 38, 38);
+    margin-bottom: .5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+}
+
+.footer .icons-conteiner .icons h3 {
+    font-size: 2rem;
+    color: blueviolet;
+    padding: 1rem 0;
+}
+
+.footer .icons-conteiner .icons p {
+    line-height: 1.5;
+    font-size: 1.8rem;
+    color: white;
+    text-transform: none;
+}
+
+.footer .share {
+    margin: 2rem 0;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    color: white;
+    background-image: linear-gradient(90deg, #5f0cb1 0%, #be5fde 100%);
+    margin: 0 .3rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background: rgba(12, 157, 89, 0.851);
+}
+
+.footer .creadit {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: .1rem solid #aaa;
+    font-size: 2rem;
+    color: black;
+}
+
+.footer .creadit {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: .1rem solid #aaa;
+    font-size: 2rem;
+    color: rgb(247, 246, 246);
+}
+
+.footer .creadit span {
+    color: orange;
+}
