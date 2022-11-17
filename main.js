@@ -27,6 +27,8 @@ var swiper = new Swiper(".produit-slider", {
     },
 });
 
+
+
 var swiper = new Swiper(".surgel-slide", {
     grabCursor: true,
     loop: true,
