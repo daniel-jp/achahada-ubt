@@ -50,14 +50,6 @@ var swiper = new Swiper(".surgel-slide", {
     },
 });
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
 
 
 
@@ -83,16 +75,11 @@ var swiper = new Swiper(".flyer-slide", {
 });
 
 
-
-
-
-
-
 let flyerPreviewContainer = document.querySelector(".flyer-preview-container")
 let PreviewBox = flyerPreviewContainer.querySelectorAll(".flyer-preview")
 
 document.querySelectorAll(".food .slide").forEach(food => {
-    flyerPreviewContainer.style.display = "flex";
+
 
     food.addEventListener("click", () => {
         flyerPreviewContainer.style.display = 'flex';
